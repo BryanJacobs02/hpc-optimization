@@ -39,6 +39,7 @@ By aligning reads with STAR and comparing expression profiles across parameter s
   
   
 ## Repository Structure
+- **`data/`**: Contains `.csv` files of converted gene lists necessary for functional analysis. Please contact me for access to featureCounts files derived from HPC.
 - **`code/`**: Contains `.r` script files for differential expression and functional analysis as well as `.slurm` script files for high performance computing workflows.
 - **`deliverables/`**: Contains `.pdf` files of final report and slide show.
 - **`README.md`**
@@ -50,6 +51,7 @@ By aligning reads with STAR and comparing expression profiles across parameter s
 
 #### To Run R Scripts
 1. Clone the repository.
-2. Download the desired `.r` file and open with a compatible software.
-3. Install the packages listed at the top of the script.
-4. Run the code as usual.
+2. Contact me at bryanj82202@gmail.com for access to featureCounts files (too large for GitHub).
+3. Download the desired `.r` file and open with a compatible software.
+4. Install the packages listed at the top of the script.
+5. Run the code as usual.
