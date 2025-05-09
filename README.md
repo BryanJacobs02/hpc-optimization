@@ -3,8 +3,10 @@
   
   
 ## Project Intro/Objective
-  
-  
+This project explores how changes to high-performance computing (HPC) parameters during RNA-seq preprocessing affect downstream analysis of gene expression. Using a multiomics dataset of FACS-sorted mouse colonic epithelial cells, the study specifically investigates how varying fastp parameters including sliding window size, PHRED score threshold, and maximum read length influence alignment quality and transcriptomic interpretation. The biological context centers on the transition from stem cells to fully differentiated enterocytes in the colon, a process known to be regulated post-transcriptionally.
+
+By aligning reads with STAR and comparing expression profiles across parameter settings, we evaluated the robustness and sensitivity of differential expression results. Despite modifications in preprocessing, overall trends remained consistent, suggesting that the dataset and analysis pipeline are relatively resilient to reasonable shifts in HPC parameterization. This work emphasizes the importance of optimizing preprocessing settings to balance data quality, computational efficiency, and biological insight in transcriptomic workflows.  
+
 ## Authors
 **Bryan Jacobs**  
 **Katharine Johnson**  
@@ -17,14 +19,11 @@
    * Enhanced Volcano
    * NMF
    * dplyr
-* Bash
+* Bash  
   
-  
-## Software & Platforms
+
+## Tools, Techniques and Softwares
 * University of Arizona High Performance Computing - Ocelote Cluster
-
-
-## Tools and Techniques
 * SLURM
 * FastQC
 * fastp
@@ -40,7 +39,7 @@
   
   
 ## Repository Structure
-- **`code/`**: Contains `.ipynb` file for logistic regression model and associated visualizations.
+- **`code/`**: Contains `.r` script files for differential expression and functional analysis as well as `.slurm` script files for high performance computing workflows.
 - **`deliverables/`**: Contains `.pdf` files of final report and slide show.
 - **`README.md`**
   
@@ -49,8 +48,8 @@
 #### For Simple Viewing
 1. Download and open desired `.pdf` files from the `deliverables/` folder.
 
-#### To Run Final Model
+#### To Run R Scripts
 1. Clone the repository.
-2. Download the Project Tycho Level 1 dataset from the link above.
-3. Download the `.ipynb` file and open with a compatible software.
+2. Download the desired `.r` file and open with a compatible software.
+3. Install the packages listed at the top of the script.
 4. Run the code as usual.
